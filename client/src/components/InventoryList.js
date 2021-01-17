@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Storage({ item, date, id, deleteItem }) {
 	const [value, setValue] = useState([]);
@@ -25,7 +26,6 @@ function Storage({ item, date, id, deleteItem }) {
 		<section className='row' id={id}>
 			<div className='col s5'>
 				<div>
-					<p className=''>Ingredient</p>
 					<p>{item}</p>
 				</div>
 			</div>
@@ -65,31 +65,26 @@ function AddNew({ addNew, value, onChange }) {
 	useEffect(() => {}, []);
 
 	return (
-		<div className='row valign-wrapper'>
+		<div className=' row valign-wrapper'>
 			<form className='col s12' onSubmit={newItem}>
 				<div className='row'>
-					<div className='input-field col s10'>
-						<label className='active' for='last_name'>
-							Ingredient
-						</label>
+					<p>
+						Click on the icon and start telling us which ingredients you have,
+						we'll cook up something great!
+					</p>
+					<div className='inv-textbox'>
 						<input
+							class='grocery-input'
 							id='last_name'
 							name='item'
 							type='text'
-							placeholder='Grocery Item'></input>
+							placeholder='Tap to make a list.'></input>
 					</div>
 
-					{/* <div className='col s10'>
-            <label className='active' for='first_name'>
-              Expiration Date
-            </label>
-            <input type='date' name='date' id='first_name'></input>
-          </div> */}
-					<div className='align-wrapper col s10'>
-						<button className='waves-effect waves-light btn primary'>
-							Submit
-						</button>
+					<div className='inv-textbox'>
+						<button className='button button1'>Submit</button>
 					</div>
+					<Link to='/recipe'>Find Recipes</Link>
 				</div>
 			</form>
 		</div>
@@ -114,7 +109,7 @@ export default function Inventory({ addNew }) {
 	};
 
 	return (
-		<section className='container'>
+		<section className='inv-bg inv-container'>
 			<h3 className=''>Inventory</h3>
 			<AddNew addNew={invItems} />
 			<div className='container'>

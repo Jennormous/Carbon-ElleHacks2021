@@ -1,0 +1,33 @@
+.grocery-input {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	color: $primary-cta;
+	border: 2px solid $primary-cta;
+}
+
+.inv-bg {
+	// background-image: url("../assets/img/secondBg.jpg");
+}
+
+.inv-container {
+	width: 80vw;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inv-textbox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	width: 80vw;
+}
