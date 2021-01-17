@@ -5,10 +5,10 @@ import HomePage from "./components/Homepage";
 import Inventory from "./components/InventoryList";
 
 import Recipes from "./components/Recipes";
-// import Footer from "./components/Footer";
 
 export default function App() {
   return (
+    
     <div className="body">
       <Header />
       <Switch>
@@ -16,7 +16,6 @@ export default function App() {
         <Route path="/grocery" render={props => <Inventory {...props} />} />
         <Route path="/recipe" render={props => <Recipes {...props} />} />
       </Switch>
-      {/* <Footer /> */}
     </div>
   );
 }

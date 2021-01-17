@@ -10,11 +10,12 @@ const GrocerySchema = mongoose.Schema({
   dateAdded: {
     type: Number,
     default: Date.now
-  },
-  dateExpire: {
-    type: Number,
-    required: true
-  }
+   }
+  //  ,
+  // dateExpire: {
+  //   type: Number,
+  //   required: true
+  // }
 });
 
-module.exports = Inventory = mongoose.model("Grocery", GrocerySchema);
+module.exports = ingredients = mongoose.model("Grocery", GrocerySchema);

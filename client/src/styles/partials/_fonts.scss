@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "roboto";
+	src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: "inria";
+	src: url("../assets/fonts/Inria_Serif/InriaSerif-Regular.ttf");
+}  
+
+@mixin main-header {
+	font-size: 30px;
+	font-family: "inria";
+	margin: 16px 0;
+}
+
+@mixin regular {
+	font-size: 16px;
+	font-family: "roboto";
+}

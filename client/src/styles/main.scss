@@ -1,0 +1,36 @@
+@import "./partials/breakpoints", "./partials/colors", "./partials/fonts",
+	"./partials/homepage", "./partials/header";
+
+* {
+	background-color: $primary-bg;
+	font-family: "inria";
+	color: $primary-font;
+}
+
+
+
+.button-div {
+	padding: 10px;
+  margin: 10px;
+  
+}
+
+ .button {
+  color: white;
+  padding: 5px;
+  width: 150px;
+ }
+.button1 {
+	background-color: $primary-cta;
+
+}
+
+.button2 {
+	background-color: $secondary-cta;
+
+}
+
+.button3 {
+	background-color: $tetriary-cta;
+	
+}
