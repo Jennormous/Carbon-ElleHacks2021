@@ -124,7 +124,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../assets/img/secondBg.jpg");
+  background-image: url("../assets/img/mainBg.jpg");
+  background-position: center;
+  background-size: 80%;
 }
 
 .alignment {
